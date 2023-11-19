@@ -57,7 +57,19 @@
         }
     }
 
-    &__nav,
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            flex-basis: 50%;
+            text-align: left;
+        }
+    }
+
     &__address {
         display: flex;
         flex-direction: column;
@@ -68,6 +80,7 @@
             flex-direction: row;
             flex-basis: 50%;
             text-align: left;
+            gap: 200px;
         }
     }
 
