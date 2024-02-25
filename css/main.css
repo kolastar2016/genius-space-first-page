@@ -739,7 +739,20 @@ ul {
 }
 .form-terms__link {
   color: var(--color-primary-dark);
-  text-underline-offset: 2px;
+  text-align: center;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, var(--color-primary-dark)), to(var(--color-primary-dark)));
+  background-image: linear-gradient(90deg, var(--color-primary-dark) 0, var(--color-primary-dark));
+  -webkit-transition: background-size 0.5s linear;
+  transition: background-size 0.5s linear;
+  background-repeat: no-repeat;
+  background-position: 0 95%;
+  background-size: 100% 1px;
+}
+.form-terms__link:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-size: 0 1px;
 }
 
 .formats-section__slider {
@@ -980,6 +993,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: opacity 0.3s, visibility 0.3s;
   transition: opacity 0.3s, visibility 0.3s;
+  z-index: 3;
 }
 .backdrop.is-hidden {
   opacity: 0;
