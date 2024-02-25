@@ -8,6 +8,18 @@
 
     &__link {
         color: var(--color-primary-dark);
-        text-underline-offset: 2px;
+        text-align: center;
+        text-decoration: none;
+        background-image: linear-gradient(90deg, var(--color-primary-dark) 0, var(--color-primary-dark));
+        transition: background-size .5s linear;
+        background-repeat: no-repeat;
+        background-position: 0 95%;
+        background-size: 100% 1px;
+    }
+
+    &__link:hover {
+        text-decoration: none;
+        cursor: pointer;
+        background-size: 0 1px;
     }
 }
